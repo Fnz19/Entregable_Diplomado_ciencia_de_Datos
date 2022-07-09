@@ -23,7 +23,7 @@ st.write("""
 
 st.write('Este dashboard tiene por objevito presentar rápida y fácilmente la información derivada del estudio de la dinámica inmobiliaria en King Count, WA (USA). Los datos están disponibles [aquí](https://www.kaggle.com/datasets/harlfoxem/housesalesprediction) ')
 
-data = pd.read_csv( 'data/kc_house_data.csv' )
+#data = pd.read_csv( 'data/kc_house_data.csv' )
 @st.cache
 def get_data():
      url = 'https://raw.githubusercontent.com/Fnz19/Entregable_Diplomado_ciencia_de_Datos/master/data/kc_house_data.csv'
