@@ -30,7 +30,8 @@ def get_data():
      return pd.read_csv(url)
 
 data = get_data()
-#st.dataframe(data)
+data_ref = data.copy()
+st.dataframe(data)
 
 
 
