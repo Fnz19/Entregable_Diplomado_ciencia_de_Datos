@@ -46,7 +46,7 @@ st.title('Filtros')
 
 OptFiltro = st.multiselect(
      'Variables a incluir en los filtros:',
-     ['Habitaciones', 'Precio', 'Baños', 'Área construida (pies cuadrados)','Pisos','Vista al agua','Evaluación de la propiedad','Condición'],
+     ['Habitaciones', 'Precio', 'Baños', 'Pisos','Vista al agua','Evaluación de la propiedad','Condición'],
      ['Precio'])
 
 if 'Precio' in OptFiltro: 
