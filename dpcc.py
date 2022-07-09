@@ -21,18 +21,18 @@ st.write("""
 #### Edison Fabián Rubio Torres
 """)
 
-
+st.write('Este dashboard tiene por objevito presentar rápida y fácilmente la información derivada del estudio de la dinámica inmobiliaria en King Count, WA (USA). Los datos están disponibles [aquí](https://www.kaggle.com/datasets/harlfoxem/housesalesprediction) ')
 
 data = pd.read_csv( 'data/kc_house_data.csv' )
 @st.cache
 def get_data():
-     url = 'https://raw.githubusercontent.com/sebmatecho/CienciaDeDatos/master/ProyectoPreciosCasas/data/kc_house_data.csv'
+     url = 'https://raw.githubusercontent.com/Fnz19/Entregable_Diplomado_ciencia_de_Datos/master/data/kc_house_data.csv'
      return pd.read_csv(url)
 data_ref = data.copy()
 
 st.dataframe(data)
 
-st.write('Este dashboard tiene por objevito presentar rápida y fácilmente la información derivada del estudio de la dinámica inmobiliaria en King Count, WA (USA). Los datos están disponibles [aquí](https://www.kaggle.com/datasets/harlfoxem/housesalesprediction) ')
+
 
 st.title('Filtros')
 ##forma de seleccionarlos los datos para el filtro
