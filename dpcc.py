@@ -29,8 +29,8 @@ def get_data():
      url = 'https://raw.githubusercontent.com/Fnz19/Entregable_Diplomado_ciencia_de_Datos/master/data/kc_house_data.csv'
      return pd.read_csv(url)
 
-
-st.dataframe(data)
+data = get_data()
+#st.dataframe(data)
 
 
 
